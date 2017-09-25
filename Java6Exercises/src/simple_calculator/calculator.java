@@ -14,7 +14,10 @@ public class calculator {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // declararea variabilelor
+        // declararea variabilelor int si char neinitializate;
+        // duble va fi initializata deoarece nu o vonm initializa de la tastatura ca pe celelalte 2;
+  
+
          int nr1,nr2;
          char operator;
          double rezultat = 0.0;
@@ -38,7 +41,9 @@ public class calculator {
                 break;
              case'/' : rezultat = nr1 - nr2 ;
                 break;
-         
+             default :
+                 System.out.println("Caracterul" + operator + " nu este un operator;");
+            
         
     }
                 System.out.println("Rezultatul este : " + rezultat );

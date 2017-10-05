@@ -17,7 +17,11 @@ public class Screen {
             this.valoareafis=valoare;
     
     }
-    
+     public void displayMessageIntro(String message){
+         System.out.println(message);
+     
+     
+     }
     public Screen(){
         
     }

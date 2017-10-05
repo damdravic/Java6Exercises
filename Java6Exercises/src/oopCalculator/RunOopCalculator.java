@@ -18,7 +18,7 @@ public class RunOopCalculator {
         // turn ON calculator
        deskCalc.turnOn();
         // read first operand
-       descCalc.displayMessage()
+       deskCalc.displayMessage();
         
     }
     

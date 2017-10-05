@@ -5,26 +5,50 @@
  */
 package oopCalculator;
 
+import java.util.Scanner;
+
 /**
  *
  * @author user
  */
 public class Calculator {
     
-    
+    Scanner read = new Scanner(System.in);
     Screen ecran = new Screen();
     static int operatorNr = 1;
     static int operandNr = 1;
     
+    static int operator1;
+    static int operator2;
+    
+    
    public void turnOn(){
        ecran.displayTurnedOn(0);
    } 
+   
+   
     public void displayMessage(){
       if(operatorNr == operandNr){
-                 ecran.displayMessageOperandIntro("Intro")
-
-    
+                 ecran.displayMessageIntro("Enter operand");
+                 operandNr++;
+                   if(operator1 == 0){
+                                      int operand1 = read.nextInt();
+                                      displayMessage();
+                                       }
+                   else{int operator2 = read.nextInt();
+                    displayMessage();
                    }
+                
+                   }
+      else{ecran.displayMessageIntro("Enter operator:");
+                operatorNr++;
+                char operator = read.next().charAt(0);
+                displayMessage();
+           
+              }
+      
+      
+      
     }
    
    }

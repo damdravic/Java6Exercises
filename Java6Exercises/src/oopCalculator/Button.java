@@ -4,11 +4,22 @@
  * and open the template in the editor.
  */
 package oopCalculator;
+import java.util.Scanner;
 
 /**
  *
  * @author user
  */
 public class Button {
-    
+  
+    public Character pressButton() {
+        return symbol;
+    }
+
+    public void buttonSymbol(Character symbol) {
+        this.symbol = symbol;
+    }
+
+    private Character symbol;
+  
 }

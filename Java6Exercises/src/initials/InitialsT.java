@@ -24,11 +24,14 @@ public class InitialsT {
         String prenume2 = initials.getPrenume2();
         
         String inume = nume.charAt(0) + ".";
+        inume = inume.toUpperCase();
         String iprenume1 = prenume1.charAt(0) + ".";
+        iprenume1 = iprenume1.toUpperCase();
         String iprenume2 ="";
         
         if(prenume2 != null){
         iprenume2 = prenume2.charAt(0) + ".";
+        iprenume2 = iprenume2.toUpperCase();
         }
         
         System.out.println("Initialele numelui sunt:   "  + iprenume1 + iprenume2 + inume);

@@ -12,15 +12,37 @@ import java.util.Scanner;
 public class VerificareNrPrenume {
     Scanner scan =  new Scanner(System.in);
     private int nrp;
+    int[] posibility={1,2};
     
     public int getNrp(){
         return nrp;
     }
     
-    public void setNrp(){
-        System.out.println("Cate prenume aveti?");
-        this.nrp = scan.nextInt();
+
+    
+    public void setNrp(){ 
         
+        System.out.println("Cate prenume aveti?");
+        String input;
+        input = scan.nextLine();
+        try{
+        this.nrp = Integer.parseInt(input);
+        }
+        catch(NumberFormatException e){
+             System.out.println("Incearca sa intreduci 1 sau 2");
+             setNrp();
+        }
+        
+        
+        
+      
+        
+        
+        
+          
+            
+       
+   
     }
     
 }

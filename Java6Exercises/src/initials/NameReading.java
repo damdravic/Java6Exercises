@@ -20,16 +20,23 @@ public class NameReading {
     Scanner scan = new Scanner(System.in);
     v.setNrp();
     int x = v.getNrp();
+    
+    if (x == 1 || x == 2){
     System.out.println("Introduceti numele : " );
     this.nume = scan.nextLine();
     System.out.println("Introduceti primul prenume : " );
     this.prenume1 = scan.nextLine();
-    
+    }
+      else{
+    System.out.println("Pot afisa initialele la nume + 1 sau 2 prenume " );
+    nameReading();
+    }
     if(x == 2){
         System.out.println("Introduceti al doilea prenume : " );
         this.prenume2 = scan.nextLine();
     }
     
+  
     }
 
     public String getNume() {

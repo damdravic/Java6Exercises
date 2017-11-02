@@ -28,7 +28,7 @@ public class NameReading {
     this.prenume1 = scan.nextLine();
     }
       else{
-    System.out.println("Pot afisa initialele la nume + 1 sau 2 prenume " );
+    System.out.println("Pot afisa initialele la nume cu 1 sau 2 prenume." );
     nameReading();
     }
     if(x == 2){

@@ -29,7 +29,7 @@ public class VerificareNrPrenume {
         this.nrp = Integer.parseInt(input);
         }
         catch(NumberFormatException e){
-             System.out.println("Incearca sa intreduci 1 sau 2");
+             System.out.println("Incearca un numar intreg.");
              setNrp();
         }
         
